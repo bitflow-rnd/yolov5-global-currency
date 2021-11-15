@@ -9,12 +9,10 @@
   - datasets/global-currency/val.txt
 
   - datasets/global-currency/test.txt
-  - 
 
 2) train / val / test 텍스트파일 생성 로직
 
   - makelist.py
-  - 
 
 3) 기계학습 명령
 
