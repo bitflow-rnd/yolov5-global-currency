@@ -6,6 +6,10 @@ f1 = open('./datasets/global-currency/train.txt', 'w')
 f2 = open('./datasets/global-currency/val.txt', 'w')
 f3 = open('./datasets/global-currency/test.txt', 'w')
 
+f1.truncate(0)
+f2.truncate(0)
+f3.truncate(0)
+
 i = 1
 
 # 이미지들의 주소 리스트로 만들어줌
