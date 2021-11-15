@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 *.pt
+runs/
 
 datasets/global-currency/**/*.jpg
 datasets/global-currency/**/*.JPG
