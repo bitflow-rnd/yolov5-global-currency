@@ -1,15 +1,25 @@
 # -*- coding: utf-8 -*-
-from glob import glob
-
-# 이미지들의 주소 리스트로 만들어줌
-train_img_list = glob('./datasets/global-currency/img/**/*.jpg')
+import glob
 
 # 리스트를 txt파일로 생성
-with open('./datasets/global-currency/train.txt', 'w') as f1:
-with open('./datasets/global-currency/val.txt', 'w') as f2:
-with open('./datasets/global-currency/test.txt', 'w') as f3:
+f1 = open('./datasets/global-currency/train.txt', 'w')
+f2 = open('./datasets/global-currency/val.txt', 'w')
+f3 = open('./datasets/global-currency/test.txt', 'w')
 
-for img_url in train_img_list
-    f1.write('\n'.join(train_img_list) + '\n')
-    f2.write('\n'.join(train_img_list) + '\n')
-    f3.write('\n'.join(train_img_list) + '\n')
+i = 1
+
+# 이미지들의 주소 리스트로 만들어줌
+for jpg_path in sorted(glob.glob('./datasets/global-currency/img/**/*.jpg')):
+    jpg_path = jpg_path.replace('\\', '/')
+    if i < 9:
+        f1.write(jpg_path + '\n')
+    elif i < 10:
+        f2.write(jpg_path + '\n')
+    else:
+        f3.write(jpg_path + '\n')
+        i = 0
+    i = i + 1
+
+f1.close()
+f2.close()
+f3.close()
