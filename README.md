@@ -1,4 +1,4 @@
-# yolov5-global-currency
+# YOLOV5 Global Currency Recognition
 
 1) 핵심 설정파일
 
