@@ -5,6 +5,8 @@ __pycache__/
 
 *.pt
 runs/
+*.npy
+*.cache
 
 datasets/global-currency/**/*.jpg
 datasets/global-currency/**/*.JPG
