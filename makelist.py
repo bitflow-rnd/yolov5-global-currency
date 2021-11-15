@@ -13,8 +13,8 @@ f3.truncate(0)
 i = 1
 
 # 이미지들의 주소 리스트로 만들어줌
-for jpg_path in sorted(glob.glob('./datasets/global-currency/img/**/*.jpg')):
-    jpg_path = jpg_path.replace('\\', '/')
+for jpg_path in sorted(glob.glob('./datasets/global-currency/**/*.jpg')):
+    jpg_path = jpg_path.split('\\', 1)[1].replace('\\', '/')
     if i < 9:
         f1.write(jpg_path + '\n')
     elif i < 10:

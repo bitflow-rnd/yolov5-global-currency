@@ -1,7 +1,7 @@
 path: ./datasets/global-currency  # dataset root dir
-train: train.txt  # train images (relative to 'path') 118287 images
-val: val.txt      # train images (relative to 'path') 5000 images
-test: test.txt    # 20288 of 40670 images
+train: train.txt  # train images (relative to 'path')
+val: val.txt      # validation images (relative to 'path')
+test: test.txt    # test images (relative to 'path')
 
 # Classes
 nc: 357  # number of classes

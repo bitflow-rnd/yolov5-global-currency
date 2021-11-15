@@ -3,7 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-datasets/global-currency/img
+*.pt
+
+datasets/global-currency/**/*.jpg
+datasets/global-currency/**/*.JPG
 
 # C extensions
 *.so
