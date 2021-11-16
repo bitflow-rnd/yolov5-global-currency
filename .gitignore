@@ -2,11 +2,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.idea
 
 *.pt
 runs/
 *.npy
 *.cache
+
+test/
+wandb/
 
 datasets/global-currency/**/*.jpg
 datasets/global-currency/**/*.JPG

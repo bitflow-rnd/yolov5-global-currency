@@ -1,0 +1,1 @@
+python detect.py --source test --weights best.pt --conf 0.25
